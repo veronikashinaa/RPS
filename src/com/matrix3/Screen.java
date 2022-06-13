@@ -15,7 +15,7 @@ import javax.swing.JComboBox;
 public class Screen extends JFrame implements ActionListener {
     final private int PLUS = 0;
     final private int MINUS = 1;
-    final private int MUL = 2;
+    final private int MULTIPLICATION = 2;
     final Character[] SIGN = {'+', '-', '*'};
     private MatrixPanel leftPanel, rightPanel;
     private JButton resultButton;
@@ -70,7 +70,7 @@ public class Screen extends JFrame implements ActionListener {
             case MINUS:
                 Matrix.Sub(m1, m2);
                 break;
-            case MUL:
+            case MULTIPLICATION:
                 Matrix.Mul(m1, m2);
                 break;
         }
